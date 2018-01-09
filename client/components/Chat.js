@@ -9,6 +9,12 @@ class Chat extends Component {
     };
   }
 
+  componentDidMount() {
+    query('getMessages', data => {
+      set('messages', data.data, false);
+    });
+  }
+
   handleText(event) {
     this.setState({ text: event.target.value });
   }
@@ -21,12 +27,6 @@ class Chat extends Component {
     } else {
       alert('You must be logged in to comment.');
     }
-  }
-
-  componentDidMount() {
-    query('getMessages', data => {
-      set('messages', data.response[0], false);
-    });
   }
 
   handleMessages(messages) {
