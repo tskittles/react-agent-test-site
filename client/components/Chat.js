@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { get, query, set } from '../../../react-agent';
+import { get, query, set } from '../../react-agent';
 
 class Chat extends Component {
   constructor(props) {

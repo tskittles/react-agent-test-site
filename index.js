@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const agent = require('../react-agent-server');
+const agent = require('react-agent-server');
 
 app.use(express.static(path.resolve(__dirname, 'build')));
 
