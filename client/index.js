@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { render } from 'react-dom';
 import Chat from './components/Chat';
 import Login from './components/Login';
-import { Agent } from '../react-agent';
+import { Agent } from '../../react-agent';
 import './style.css';
 
 class App extends Component {
@@ -23,7 +23,7 @@ const initialStore = {
 };
 
 render(
-  <Agent url='http://localhost:3000' store={initialStore}>
+  <Agent store={initialStore}>
     <App />
   </Agent>
   , document.querySelector('#root'));

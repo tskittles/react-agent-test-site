@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { set, get, query } from '../../react-agent';
+import { set, get, query } from '../../../react-agent';
 
 class Login extends Component {
   constructor(props) {
